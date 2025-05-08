@@ -17,7 +17,7 @@ const Hero = () => {
                     <div className="flex lg:flex-row-reverse flex-col items-center justify-center gap-24 w-full my-24 lg:px-10 md:px-7 px-5">
                         <img
                             src="https://b11-a9.vercel.app/assets/banner1-DkkHtpji.png"
-                            className="max-w-sm rounded-lg shadow-2xl"
+                            className="rounded-lg shadow-2xl"
                         />
                         <div>
                             <h1 className="text-5xl font-bold">The <span className='text-blue-500'>Easiest Way </span><br />
