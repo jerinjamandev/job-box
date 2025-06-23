@@ -1,0 +1,150 @@
+[
+    {
+      "id": "1",
+      "name": "TechNova Inc.",
+      "logo": "https://technova.com/wp-content/uploads/2022/07/LogoMakr-0QVgDV-1.png",
+      "location": "San Francisco, CA",
+      "website": "https://technova.com",
+      "industry": "Software Development",
+      "jobs": [
+        {
+          "id": "job-001",
+          "title": "Frontend Developer",
+          "bannerImage": "https://source.unsplash.com/featured/?frontend,code",
+          "location": "Remote",
+          "salary": "$70,000 - $90,000",
+          "jobType": "Full-time",
+          "description": "Build and maintain React-based UI components.",
+          "requirements": [
+            "Strong HTML, CSS, JavaScript",
+            "React.js experience",
+            "Responsive design skills",
+            "REST API knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "GreenCore Solutions",
+      "logo": "https://www.greencore.com/app/themes/greencore/dist/img/favicons/favicon.ico?v=2bAnRJbYLd",
+      "location": "Austin, TX",
+      "website": "https://greencore.com",
+      "industry": "Green Energy",
+      "jobs": [
+        {
+          "id": "job-002",
+          "title": "UI/UX Designer",
+          "bannerImage": "https://source.unsplash.com/featured/?design,uiux",
+          "location": "Austin, TX",
+          "salary": "$60,000 - $80,000",
+          "jobType": "Part-time",
+          "description": "Create eco-friendly web interfaces.",
+          "requirements": [
+            "Proficient in Figma, Adobe XD",
+            "Design system experience",
+            "Creative problem-solving"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "FinEdge Corp.",
+      "logo": "https://cdn.prod.website-files.com/64da754c8fc4a952508c6478/64df2d5f1bbf90309d83d0de_finedge-consulting-logo01.svg",
+      "location": "New York, NY",
+      "website": "https://finedge.io",
+      "industry": "Fintech",
+      "jobs": [
+        {
+          "id": "job-003",
+          "title": "DevOps Engineer",
+          "bannerImage": "https://source.unsplash.com/featured/?devops,cloud",
+          "location": "Remote",
+          "salary": "$90,000 - $120,000",
+          "jobType": "Full-time",
+          "description": "Manage CI/CD and cloud infrastructure.",
+          "requirements": [
+            "AWS or GCP experience",
+            "Docker & Kubernetes",
+            "CI/CD pipelines",
+            "Monitoring & alerts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "EduSmart",
+      "logo": "https://edusmart-website.s3.amazonaws.com/images/other/es-logo.webp",
+      "location": "Boston, MA",
+      "website": "https://edusmart.com",
+      "industry": "E-learning",
+      "jobs": [
+        {
+          "id": "job-004",
+          "title": "Content Writer",
+          "bannerImage": "https://source.unsplash.com/featured/?writing,content",
+          "location": "Boston, MA",
+          "salary": "$45,000 - $60,000",
+          "jobType": "Contract",
+          "description": "Develop learning materials for online courses.",
+          "requirements": [
+            "Excellent writing skills",
+            "Content structuring",
+            "Basic SEO knowledge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "HealthBridge",
+      "logo": "https://healthbridge.co.za/wp-content/uploads/2023/12/Asset-1-1.png",
+      "location": "Chicago, IL",
+      "website": "https://healthbridge.com",
+      "industry": "Healthcare Technology",
+      "jobs": [
+        {
+          "id": "job-005",
+          "title": "Mobile App Developer",
+          "bannerImage": "https://source.unsplash.com/featured/?mobile,app",
+          "location": "Chicago, IL",
+          "salary": "$75,000 - $95,000",
+          "jobType": "Full-time",
+          "description": "Develop cross-platform mobile apps for patients.",
+          "requirements": [
+            "Flutter or React Native",
+            "Mobile APIs and integration",
+            "UI/UX for mobile"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "European IT Solutions.",
+      "logo": "https://euitsols.com/wp-content/uploads/2024/11/Euitsols-logo-300x96-2.webp",
+      "location": "Mirpur 10",
+      "website": "https://euitsols.com/",
+      "industry": "IT Solutions",
+      "jobs": [
+        {
+          "id": "job-006",
+          "title": "Data Analyst",
+          "bannerImage": "https://source.unsplash.com/featured/?data,analytics",
+          "location": "Mirpur 10 (On-Site)",
+          "salary": "$65,000 - $85,000",
+          "jobType": "Full-time",
+          "description": "Analyze user data and provide marketing insights.",
+          "requirements": [
+            "SQL & Python",
+            "Google Analytics",
+            "Data visualization tools",
+            "Business analysis skills"
+          ]
+        }
+      ]
+    }
+  ]
+  
