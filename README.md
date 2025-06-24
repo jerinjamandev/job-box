@@ -29,7 +29,7 @@ JobBox is a modern, responsive job portal web application built with React and T
 ---
 
 ```bash
-git clone 'https://github.com/jerinjamandev/job-box.git'
+git clone https://github.com/jerinjamandev/job-box.git
 cd job-box
 npm install
 npm run dev
