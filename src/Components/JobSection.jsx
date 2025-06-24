@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const JobSection = ({ fetchJobData }) => {
     const jobs = use(fetchJobData)
-    console.log(jobs);
+    // console.log(jobs);
     return (
         <div className="py-10 lg:px-10 md:px-7 px-5">
             <h2 className="text-2xl font-bold mb-6">Available Jobs</h2>

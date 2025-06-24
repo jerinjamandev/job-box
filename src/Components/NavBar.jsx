@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { Authcontext } from '../provider/Authprovider';
 
 const NavBar = () => {
+    const { user,logout } = useContext(Authcontext)
     const nav = <>
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
@@ -12,12 +14,17 @@ const NavBar = () => {
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
         } to='/contact'>Contact Us</NavLink></li>
-        <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
-        } to="/login">Login</NavLink></li>
-        <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
-        } to="/register">Register</NavLink></li>
+        {
+            !user && <li><NavLink className={({ isActive, isPending }) =>
+                isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
+            } to="/login">Login</NavLink></li>
+        }
+     {
+
+        !user&&<li><NavLink className={({ isActive, isPending }) =>
+        isPending ? "pending" : isActive ? "text-blue-500 font-semibold border-blue-500 border-b-2" : ""
+    } to="/register">Register</NavLink></li>
+     }
 
     </>
     return (
@@ -50,14 +57,17 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                   <Link to='/my-profile'>
-                   <div className="avatar">
+                    <Link to='/my-profile'>
+                      {
+                        user&&<div className="avatar">
                         <div className="w-[40px] rounded-full">
-                            <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+                            <img alt={user?.displayName} src={user?.photoURL} />
                         </div>
                     </div>
-                   </Link>
-                    <a className="btn btn-error text-white">Logout</a>
+                      }
+                    </Link>
+                    {user&&<button onClick={logout} className="btn btn-error text-white">Logout</button>
+}
                 </div>
             </div>
         </div>
