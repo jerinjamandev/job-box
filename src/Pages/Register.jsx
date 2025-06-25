@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // import DocumentTitle from '../Hook/DocumentTitle';
 import { FaEye, FaRegEyeSlash } from 'react-icons/fa';
 import SocialLogin from '../Components/SocialLogin';
 import { auth } from '../firebase.init';
+import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
+import { toast } from 'react-toastify';
 
 const Register = () => {
     const [showPassword, setShowPassword] = useState(false);
-
+    const navigate=useNavigate()
     const handlesubmit=(event)=>{
         event.preventDefault()
         const name=event.target.name.value;
@@ -15,10 +17,33 @@ const Register = () => {
         const email=event.target.email.value;
         const password=event.target.password.value;
 
-        createUserWithEmailAndPassword(auth,email,password,photo)
-        
+        createUserWithEmailAndPassword(auth,email,password)
+        .then((userCredential) =>{
+            console.log(userCredential.user);
+
+            updateProfile(auth.currentUser,{
+                displayName:name, photoURL:photo
+
+            })
+
+            .then(()=>{
+                toast.success('Register successfully')
+                navigate('/')
+            })
+
+            .catch(error=>{
+                console.log(error.message);
+                toast.error(error.message)
+            })
+        })
+
+        .catch(error=>{
+            console.log(error.message);
+            toast.error(error.message)
+        })
 
     }
+
 
 
     

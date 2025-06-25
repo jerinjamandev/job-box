@@ -9,6 +9,8 @@ import Register from "../Pages/Register";
 import CompanyDetails from "../Pages/JobDetils";
 import NotFound from "../Pages/NotFound";
 import About from "../Pages/About";
+import Privetroute from "../provet/Privetroute";
+import Forget from "../Pages/Forget";
 
   export const router = createBrowserRouter([
     {
@@ -21,8 +23,10 @@ import About from "../Pages/About";
         },
         {
             path:'/company/:id',
-            element:<CompanyDetails></CompanyDetails>,
-            loader:()=>fetch('/jobdata.json')
+            element:<Privetroute>
+              <CompanyDetails></CompanyDetails>
+              </Privetroute>,
+             loader:()=>fetch('/jobdata.json')
         },
         {
             path:'/login',
@@ -36,6 +40,11 @@ import About from "../Pages/About";
         {
           path:'/about',
           element:<About></About>
+        },
+        {
+          path:'/forget',
+          element:<Forget></Forget>
+
         }
       ]
     },
